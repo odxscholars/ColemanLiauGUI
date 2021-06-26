@@ -57,7 +57,7 @@ root= Tk()
 root.title('My DefHacks 3.0 submission')
 col_ = '#786A4D'
 # bg = col changes the color of background
-canvas1 = Canvas(root, width = 800, height = 600, bg = col_, highlightthickness= 0)
+canvas1 = Canvas(root, width = 800, height = 600, bg = col_, highlightthickness= 0) #honestly don't know what canvas does
 canvas1.pack()
 canvas2 = Canvas(root, width = 800, height = 600, bg = col_, highlightthickness= 0)
 canvas2.pack()
@@ -71,7 +71,7 @@ def driverFunc():
     label1 = Label(root, text= ("This given text is for Grade " + print_this + " students"))
     label2 = Label(root,text =("Run the program again to check for more text files!"))
     canvas1.create_window(300, 120, window=label1)
-    canvas2.create_window(230, 230, window=label2)
+    canvas2.create_window(230, 230, window=label2) 
     
 button1 = Button(text='Get CLI Index', command=driverFunc, bg = '#795548')
 canvas1.create_window(400, 500, window=button1)
