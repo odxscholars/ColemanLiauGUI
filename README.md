@@ -17,3 +17,8 @@ The Coleman-Liau Index is an index used by educational institutions to measure t
 - Run "python3 ColemanLiauGUI_Main.py" (However, you can rename the file to anything you want).
 - Input desired .txt file to check its CLI Index.
 
+
+## Screenshot
+
+### Here you can see our "KFC-themed" UI design :)
+![screenshot](https://github.com/odxscholars/ColemanLiauGUI/blob/main/ss.png)
