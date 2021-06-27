@@ -7,18 +7,18 @@ import os
 def main_test(param_):
     test = open(param_)
     t_var = test.read()
-    text_edited = t_var.replace("!", ".").replace("?",".").replace("\n", " ")
+    text_edited = t_var.replace("!", ".").replace("?",".").replace("\n", "")
     letterc = 0
-    spacec = 1
+    spacec = 0
     puncc = 0
     string_length = len(text_edited)
-    counter_s = 0
+    
     for i in range(0, string_length, 1):
         if text_edited[i].isalpha() == True:
             letterc += 1
         elif text_edited[i].isspace() == True:
-           counter_s += 1 
-    spacec = counter_s
+           spacec += 1
+    
     final_resultL = (letterc / (spacec - 1) * 100)
 
     string_length = len(text_edited)
@@ -32,8 +32,9 @@ def main_test(param_):
     # S = s / w *100
     word_count = final_resultL
     sentence_count = final_resultS
+    print("letterc is ", letterc)
     print("# of sentence-ending punctuations", puncc,"\n" "# of spaces: ", spacec)
-    final_resultF = ((0.0588 * word_count) - 0.296 * sentence_count) - 15.8
+    final_resultF = (((0.0588 * ((letterc / (spacec + 1.0)) * 100.0)) - (0.296 * ((puncc / (spacec + 1.0)) * 100.0))) - 15.8)
     print("Approximate value of the CLI: ", final_resultF)
     return final_resultF
 
