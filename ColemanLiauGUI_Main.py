@@ -43,7 +43,7 @@ col_ = '#FF947F'
 # bg = col changes the color of background
 canvas1 = Canvas(root, width = 800, height = 300, bg = col_, highlightthickness= 0)
 text1 = Label(text="Text file/s should be in the same directory of the program", font = 'Consolas 14', bg = col_)
-my_img = ImageTk.PhotoImage(Image.open("/home/shem/Python/images/150.png"))
+my_img = ImageTk.PhotoImage(Image.open("150.png"))
 my_label = Label(image=my_img)
 my_label.pack(pady=20)
 text1.pack(pady=30)
