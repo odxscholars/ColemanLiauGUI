@@ -1,5 +1,5 @@
 # CLI-GUI
-This project is the team's submission to our first hackathon, DefHacks 3.0 Hackathon. This project consists of a GUI that was built using Python TKinter to make automating the process simpler and visually appealing.
+This project is the team's submission to our first hackathon, DefHacks 3.0 Hackathon. This project consists of a GUI that was built using Python TKinter to make automating the process simpler and visually appealing. The program is designed so you can input as much .txt files you want without having to re-run the entire program.
 
 ## Coleman-Liau Index
 
